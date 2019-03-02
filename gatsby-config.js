@@ -65,6 +65,7 @@ module.exports = {
         process.env.NODE_ENV === 'development'
           ? contentfulConfig.development
           : contentfulConfig.production,
+        host: process.env.GATSBY_CONTENTFUL_HOST
     },
     {
       resolve: 'gatsby-plugin-google-analytics',
